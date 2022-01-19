@@ -1,0 +1,42 @@
+body {background-color: rgb(0, 0, 0); color:white}
+
+.cell {
+    width:40px; height:40px;text-align: center
+}
+.cell img {
+    width:25px; height:auto
+}
+.floor {
+    background-color: gray
+}
+.wall {
+    background-color: brown
+}
+.ballCounter * {
+    font-family: verdana;
+    height: 40px ;
+    color:  red;
+    font-size: 20px;
+}
+.ballCounter {
+    font-family: verdana;
+    height: 40px ;
+}
+.board {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.game-container {
+    width:540px;
+    margin:0 auto;
+}
+.text-froze {
+    display: none;
+    /* visibility: hidden; */
+    text-align: center;
+    font-size: 2rem;
+    margin-top:40px;
+    color: rgb(9, 91, 243);
+}
+

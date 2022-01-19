@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-trans="title">book shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()">
+    <div class="body-Login">
+    <h1 data-trans="title">Book Shop</h1>
+    <h3 data-trans="login">Login</h3>
+    <div class="lang">
+        <select autocomplete="off" class="lang" onchange="onSetLang(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+            <option value="ru">русский</option>
+        </select>
+    </div>
+    <div class="login-container">
+        <div class="userN">
+            <span class="login-text" data-trans="userName">User Name</span><span>:</span><input type="text" data-trans="userName" class="userName" placeholder="User-Name">
+        </div>
+        <div class="userP">
+            <span class="login-text" data-trans="password">Password</span><span>:</span><input type="password" data-trans="password" class="password" placeholder="Your password">
+        </div>
+        <div class="my-buttons">
+            <button id="confirm" data-trans="login"onclick="onDoLogin(false)">Log in</button>
+            <button id="confirm" data-trans="skip"onclick="onDoLogin(true)">skip</button>
+        </div>
+    </div>
+    <div class="pop-wrong">One of your inputs are wrong! <br> Try again </div>
+    </div>
+    <script src="js/util-service.js"></script>
+    <script src="js/storage.service.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/user.service.js"></script>
+    <script src="js/user-controller.js"></script>
+</body>
+</html>

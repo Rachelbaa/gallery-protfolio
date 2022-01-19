@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-trans="title">book shop</title>
+    <link rel="stylesheet" href="css/bookShop.css">
+</head>
+<body onload="init()">
+    <div class="body-shop">
+        <header>
+            <h1 data-trans="title">Book Shop</h1>
+            <div class="body-header"></div>
+            <select autocomplete="off" class="lang" onchange="onSetLang(this.value)">
+                <option value="en">English</option>
+                <option value="he">עברית</option>
+                <option value="ru">русский</option>
+            </select>
+        </header>
+        <table class="direction">
+            <tr>
+                <th data-trans="row-direction" class="row btn-direction" onclick="direction('row')">row</th>
+                <th data-trans="col-direction" class="col btn-direction" onclick="direction('column')">col</th>
+            </tr>
+        </table>
+        <section class="add-book">
+            <select name="bookGener-list"></select>
+            <input name="price" type="number" min="60" placeholder="price" data-trans="add-price-placeholder">
+            <button data-trans="add" onClick="onAddBook()">Add</button>
+        </section>
+        <div class="page-mover">
+            <!-- <table class="page-table">
+                <tr>
+                    <th class="btn-next" onclick="onNextPage()">1</th>
+                    <th class="btn-next" onclick="onNextPage()">2</th>
+                    <th class="btn-next" onclick="onNextPage()">3</th>
+                    <th class="btn-next" onclick="onNextPage()">Next Page</th>
+                </tr>
+            </table> -->
+        </div>
+        <section class="books-container"></section>
+        <div class="modal" hidden>
+            <h5></h5>
+            <h6></h6>
+            <p></p>
+            <hr />
+            <button onclick="onCloseModal()" data-trans="b-close">Close</button>
+        </div>    
+    </div>
+    <!-- <h3>Welcom<span class="spanUN"></span></h3> -->
+    <script src="js/util-service.js"></script>
+    <script src="js/storage.service.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/user.service.js"></script>
+    <script src="js/user-controller.js"></script>
+    <script src="js/book.service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+</html>

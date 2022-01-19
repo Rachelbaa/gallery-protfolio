@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    margin: auto 0;
+    background-color: #fcdc8c;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .btn-delete {
+    float: left;
+}
+
+.lang {
+    margin-bottom: 15px;
+}
+
+h1 {
+    color:lightyellow;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: lightsteelblue;
+    padding: 5px;
+}
+
+h3 {
+    color:lightsteelblue;
+    text-shadow: 2px 2px 4px #ffffff;
+    background-color: lemonchiffon;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input {
+    margin: 5px;
+}
+
+#confirm {
+    min-width: 50px;
+}
+
+.login-text {
+   left: 0;
+}
+
+.my-buttons {
+    margin-top: 20px;
+}
+
+.pop-wrong {
+    color: red;
+    display: none;
+}

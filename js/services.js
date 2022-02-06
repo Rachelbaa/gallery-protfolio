@@ -5,6 +5,7 @@ var gProjs = [
     createProj('pacman', 'Pac-Man', 'No-shame copy of Pac-Man', 'Modern design of the classic pacman, truly amazing', 'projs/test', '10 / 01 / 2022', 'Matrixes,Game'),
     createProj('minesweeper', 'Mine Sweeper', 'Watch out from the mines!', 'An enhanced version of the classic minesweeper game', 'projs/test', '03 / 12 / 2021', 'Matrixes,Game,Classic'),
     createProj('map-Proj', 'Map Locations', 'Google Map API service', 'A google maps api interface, which lets you search and add locations', 'projs/test', '27 / 11 / 2021', 'API,Website,Google'),
+    createProj('canvas', 'Meme Genarator', 'Google Map API service', 'Cool canvas with lalala', 'projs/test', '04 / 01 / 2022', 'API,Website,Google'),
 ]
 
 function getPortCard(sentCardId) {

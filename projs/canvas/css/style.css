@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: robotoR;
+    src: url(../fonts/roboto/Roboto-Thin.ttf)
+}
+
+body {
+    background-color: rgb(219, 213, 213);
+    margin: auto 0;
+    font-family: robotoR;
+    color: rgb(228, 226, 226);
+}
+
+.logo-image {
+    height: 50px;
+    width: 100px;
+}
+
+.memeAditor-container {
+    background-color: rgb(119, 119, 119);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fichers-container {
+    border: 3px solid rgb(99, 98, 98);
+    padding: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.fichers-mini-container {
+    flex-direction: column;
+}
+/* .up-line-btn{
+font-size: 2rem;
+color: white;
+/* fill: white; 
+} */
+
+#text {
+    width: 100%;
+    text-align: center;
+}
+
+.line-fichers {
+  
+    justify-content: space-around;
+    /* align-self: flex-end; */
+}
+
+
+.fich:hover {
+    background-color: rgb(129, 129, 129);
+    /* color: rgb(61, 61, 61); */
+    border: 2px solid rgb(129, 129, 129);
+} 
+
+.little-box{
+    /* border: 2px solid rgb(109, 109, 109); */
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+
+}
+
+.little-boxImg{
+    padding: 3px;
+    height: 22px;
+    width: 25px;
+    /* margin: 3px; */
+
+}
+
+.small-box {
+    padding-top: 2px;
+    height: 30px;
+    width: 30px;  
+    margin: 3px;
+    /* border: 2px solid rgb(109, 109, 109); */
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    user-select: none;
+}
+
+
+canvas {
+    display: block;
+}
+
+.canvas-container {
+    background-color: white;
+    width: 415px;
+    height: 415px; 
+}
+
+
+.main-header {
+    background-color: rgb(129, 129, 129);
+}
+
+.header-container {
+   height: 60px;
+   box-shadow: -1px 0 0 rgb(121, 120, 120), inset 0 -6px 0 rgb(124, 124, 124);
+}
+
+.logo {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.btn-menu {
+    visibility:hidden;
+    font-size: 1.3rem;
+    background-color: rgb(129, 129, 129);
+    border: none;
+    color: white;
+}
+
+.main-nav {
+    margin: auto 0;
+}
+
+.main-nav li{
+    padding: 1.2rem;
+    border-left: 1px solid rgb(97, 96, 96);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.main-nav li:hover {
+    transition: 0.3s;
+    color: rgb(61, 61, 61);
+    box-shadow: -1px 0 0 rgb(61, 61, 61), inset 0 -6px 0 rgb(61, 61, 61);
+}
+
+.selected-liNav {
+    color: white;
+    box-shadow: -1px 0 0 rgb(29, 29, 29), inset 0 -6px 0 white;
+}
+
+.main-nav li:last-child {
+    border-right: 1px solid black;
+}
+
+section {
+    background-color: rgb(165, 165, 165, 0.5);
+    margin: auto ;
+    padding: 20px;
+    /* font-size: 0.4rem; */
+    /* text-align: center; */
+}
+
+.searchImg-btn {
+    display: inline;
+    cursor: pointer;
+}
+
+.searchImg-btn:hover {
+  color: rgb(61, 61, 61);
+}
+
+.images-container {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin: 20px;
+    text-align: center;
+}
+
+.img-box {
+    height: 150px;
+    width: 150px;
+    display: inline;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.meme-box {
+    height: 150px;
+    width: 150px;
+    display: inline;
+}
+
+.link-downl:hover {
+    color: rgb(61, 61, 61);
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgb(165, 165, 165);
+    padding: 40px;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+justify-content: space-between;
+}
+
+.flex.flex.space-around {
+    justify-content: space-around;
+}
+
+.clean-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.border {
+   border-left:3px solid rgb(92, 92, 92);
+   border-right:3px solid rgb(92, 92, 92);
+   border-top:3px solid rgb(92, 92, 92);
+    padding: 15px
+}
+
+.color-fichers {
+    border-bottom: 3px solid rgb(92, 92, 92);
+}
+
+#colorT {
+    position: absolute;
+    opacity: 0;
+    width: 30px;
+    left: -1px;
+}
+
+#colorS {
+    position: absolute;
+    opacity: 0;
+    width: 30px;
+    left: -10px;
+}
+
+.font-color {
+    position: relative;
+    margin-right: 30px ;
+}
+
+.stroke-color {
+    position: relative;
+    margin-left: 30px ;
+}
+
+.memeGalary-container {
+    background-color: rgb(143, 143, 143);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+}

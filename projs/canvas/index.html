@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meme page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="onInit()">
+    <header class="main-header">
+        <div class="header-container flex space-between">
+            <div class="logo">Meme Genarator</div>
+
+            <button class="btn-menu" onclick="onToggleMenu()">☰</button>
+            
+            <ul class="main-nav flex clean-list">
+                <li class="li-nav" onclick="onSelectNav(0)">
+                    <a href="#">Gallery</a>
+                </li>
+                <li class="li-nav" onclick="onSelectNav(1)">
+                    <a href="#">Memes</a>
+                </li>
+                <li class="li-nav" onclick="onSelectNav(23)">
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="memeAditor-container flex">
+        <div class="canvas-container">
+            <canvas  onclick="getCurrText(event)" onmousedown="onSetMouseDown()" onmouseup="onSetMouseUp()" onmousemove="moveCurrText(event)" id="my-canvas" style="border: 1px solid black;"></canvas>
+             <!-- onmousedown="onSetMouseDown()" onmousemove="draw(event)"  onmouseup="onSetMouseUp()" -->
+        </div>
+        <div class="fichers-container flex space-between">
+            <div class="fichers-mini-container flex">
+                <div class="input-text border">
+                    <input onkeydown="onDrawText(event)" type="text" id="text" placeholder="text 1 (Press ENTER)">
+                </div>
+                <div class="line-fichers flex border">
+                    <div class="up-line-btn small-box fich" onclick="onMove('up')">⇧</div>
+                    <div class="down-line-btn small-box fich" onclick="onMove('down')">⇩</div>
+                    <div class="moveNext-line-btn" onclick="onNextText()"><img src="./img/fichers-icon/move-next.png" class="little-box fich" alt=""></div>
+                    <!-- <div class="add-line-btn small-box fich">+</div> -->
+                    <div class="remove-line-btn" onclick="onDeleteText()"><img src="./img/fichers-icon/trash.png" class="little-box fich" alt=""></div>
+                </div>
+                <div class="text-fichers space-between border">
+                    <div class="lala flex space-between">
+                        <div class="bigger-font-btn small-box fich" onclick="onChangeFont('big')">A+</div>
+                        <div class="smaller-font-btn small-box fich" onclick="onChangeFont('small')">A-</div>
+
+                    </div>
+                    <div class="lala2 flex space-between">
+                        <div class="left-align-btn" onclick="onGetDirection('left')"><img src="./img/fichers-icon/left-align.png" class="little-box fich" alt=""></div>
+                        <div class="center-align-btn" onclick="onGetDirection('center')"><img src="./img/fichers-icon/center-align.png" class="little-box fich" alt=""></div>
+                        <div class="rigth-align-btn" onclick="onGetDirection('right')"><img src="./img/fichers-icon/right-align.png" class="little-box fich" alt="" ></div>
+                    </div>
+                </div>
+                <div class="color-fichers flex space-between border">
+                    <!-- <div class="impact-input">
+                        <select onchange="setShape(this.value)">
+                            <option value="triangle small-box fich">IMPUT</option>
+                            <option value="rect">Rect</option>
+                        </select>
+                    </div> -->
+                    <div class="stroke-color small-box fich"> <input oninput="onChangeColorS()" type="color" name="lala" class="small-box fich" id="colorS">S</div>
+                    <div class="font-color small-box fich"><img src="./img/fichers-icon/fill.png" class="little-boxImg" alt="" ><input oninput="onChangeColor()" type="color" name="lala" id="colorT"></div>
+                </div>
+
+            </div>
+            
+            <div class="stikers-container"></div>
+            <div class="downSave flex space-between">
+                <a href="#" onclick="onDownloadCanvas(this)" download="" class="link-downl">Download</a>
+                <a href="#" onclick="onSaveCanvas()" download="" class="link-downl">Save</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="memeGalary-container flex"> 
+      <div class="savedMemes-container"></div>
+    </div> 
+
+    <div class="gallary-container">
+        <section>
+            <input type="search" id="img-search" placeholder="Search (min 3 letters)">
+            <div class="searchImg-btn" onclick="renderImages()">Search</div>
+            <ul class="keywords-container"></ul>
+        </section>
+        <main class="images-container"></main>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-text">
+            &copy;2022 MemeGenarator.com - All Rights Reserved - Find more free Templates at <a class="siteAdress"
+                href="">MemeGenarator.com</a>
+        </div>
+    </footer>
+    
+    <!-- <script src="./js/storage-controller.js"></script> -->
+    <script src="./js/main-controller.js"></script>
+    <script src="./js/main-service.js"></script>
+    <script src="./js/meme-controller.js"></script>
+    <script src="./js/meme-service.js"></script>
+</body>
+</html>

@@ -236,14 +236,14 @@ a {
 }
 
 .border {
-   border-left:3px solid rgb(92, 92, 92);
-   border-right:3px solid rgb(92, 92, 92);
-   border-top:3px solid rgb(92, 92, 92);
+   border-left:1px solid white;
+   border-right:1px solid white;
+   border-top:1px solid white;
     padding: 15px
 }
 
 .color-fichers {
-    border-bottom: 3px solid rgb(92, 92, 92);
+    border-bottom: 1px solid white;
 }
 
 #colorT {

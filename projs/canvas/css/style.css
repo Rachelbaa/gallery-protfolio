@@ -31,6 +31,7 @@ body {
     padding: 10px;
     margin-left: 10px;
     flex-direction: column;
+    background: rgb(129, 129, 129) linear-gradient(rgb(190, 190, 190), rgb(129, 129, 129)) repeat-x;
     /* width: 100%; */
 }
 
@@ -105,7 +106,9 @@ canvas {
 
 
 .main-header {
-    background-color: rgb(129, 129, 129);
+    /* background-color: rgb(129, 129, 129); */
+    background: rgb(190, 190, 190) linear-gradient(rgb(129, 129, 129), rgb(167, 167, 167)) repeat-x;
+
 }
 
 .header-container {

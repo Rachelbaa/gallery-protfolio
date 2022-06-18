@@ -1,0 +1,165 @@
+@import './helpers.css';
+@import './cmps/app-header.css';
+@import './cmps/note-text.css';
+@import './cmps/note-img.css';
+@import './cmps/note-todos.css';
+@import './cmps/note-video.css';
+@import './cmps/note-audio.css';
+@import './cmps/note-map.css';
+@import './cmps/add-note.css';
+@import './cmps/edit-note.css';
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/roboto/Roboto-Regular.ttf)
+}
+@font-face {
+    font-family: robotoB;
+    src: url(../fonts/roboto/Roboto-Bold.ttf)
+}
+
+p,h1 ,h2 ,h3, h4 ,section{
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* html {
+    margin: 0;
+    height: 100vh;
+} */
+
+body {
+    margin: 0;
+}
+
+.myApp {
+    /* margin: 0; */
+    overflow-y: auto;
+    background-image: url(../img/board3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: roboto;
+    margin-right: 230px;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* ///////////notes/////////// */
+
+.notes-container {
+  /* height: 76.5vh; */
+  margin: 0px 25px;
+  /* display: flex;
+  justify-content: space-between; */
+} 
+
+
+.unpinned-container{
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 13px 0px 10px; 
+    width: 230px;
+    background-color: rgb(70, 70, 70, 0.6);
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.pinned-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.note {
+    position: relative;
+    box-shadow: -10px 10px 15px rgb(20, 20, 20);
+    /* overflow-y: auto; */
+}
+
+.isPinned-btn {
+    position:absolute;
+    right: 5px;
+    top: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.pin-img {
+    width: 50px;
+    position: absolute;
+    right: 37%;
+    top: -20px;
+}
+
+.edit-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-image {
+    width: 30px;
+}
+
+.edit-image {
+    width: 35px;
+}
+
+.delete-image:hover {
+    width: 33px;
+}
+
+.edit-image:hover {
+    width: 38px;
+}
+
+.todo-line {
+    padding: 3px 0px 0px 15px;
+    cursor: pointer;
+}
+
+.check {
+ position: absolute;
+ left: 8px;
+ /* font-size: 1.3rem; */
+}
+
+.didIt {
+    text-decoration: line-through;
+}
+
+.todo-txt {
+    z-index: 2;
+}
+

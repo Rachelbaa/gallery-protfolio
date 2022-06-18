@@ -1,0 +1,67 @@
+.editNote-container {
+    /* background-color: rgb(151, 151, 151); */
+    text-align: center;
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    left: 0;
+}
+
+input[type='number'] {
+ width: 45%;
+ margin: 3px;
+}
+
+.colors-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inputsOnEdit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputEdit-txt {
+    width: 95%;
+    margin: 5px;
+}
+
+.done {
+    margin: 2px 20px;
+    color: white;
+    padding: 1px 8px;
+    background-color: rgb(118, 196, 116);
+    border-radius: 3px;
+    width: 30%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.done:hover {
+    background-color: rgb(147, 236, 147);
+}
+
+.cancel {
+    margin: 2px 20px;
+    color: white;
+    background-color: rgb(230, 66, 66);
+    border-radius: 3px;
+    width: 30%;
+    padding: 1px 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cancel:hover {
+    background-color: rgb(252, 118, 118);
+}

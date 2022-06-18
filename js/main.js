@@ -26,19 +26,20 @@ function renderPortCards() {
 function setModal(sentCardId) {
     // debugger
     var cardToDisplay = getPortCard(sentCardId)
+    const appLink = (cardToDisplay.url) ? cardToDisplay.url : `projs/${cardToDisplay.id}/index.html`;
 
     $('.modal-body').html(`
     <h2>${cardToDisplay.name}</h2>
-<p class="item-intro text-muted">${cardToDisplay.title}</p>
-<img class="img-fluid d-block mx-auto" src="img/portfolio/${cardToDisplay.id}-full.png" alt="">
-<p>${cardToDisplay.desc}</p>
+    <p class="item-intro text-muted">${cardToDisplay.title}</p>
+    <img class="img-fluid d-block mx-auto" src="img/portfolio/${cardToDisplay.id}-full.png" alt="">
+    <p>${cardToDisplay.desc}</p>
     <ul class="list-inline"> 
     <li>Date: ${cardToDisplay.publishedAt}</li>
     <li>Label: ${cardToDisplay.labels}</li>
     </ul>
-    <a class="btn btn-primary" target="_blank" href='projs/${cardToDisplay.id}/index.html'> Run </a>
-     
-<button class="btn btn-primary" data-dismiss="modal" type="button"> Exit </button>
+
+    <a class="btn btn-primary" target="_blank" href="${appLink}"> Run </a>
+    <button class="btn btn-primary" data-dismiss="modal" type="button"> Exit </button>
 `)
 }
 //

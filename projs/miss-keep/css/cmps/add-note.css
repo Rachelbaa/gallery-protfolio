@@ -1,0 +1,48 @@
+.add-note {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(88, 88, 88, 0.6);
+    justify-items: center;
+
+}
+
+.noteCreator-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.type-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-input {
+    padding: 10px 20px 10px 10px;
+    /* font-family: monospace; */
+    max-width: 350px;
+    border-radius: 4px;
+    /* font-size: 1.2rem; */
+    border: none;
+    margin: 5px;
+}
+
+.type-image {
+    width: 25px;
+    cursor: pointer;
+}
+
+.add-image {
+    width: 25px;
+    height: 25px;
+    margin: auto 10px 40px 0px
+}

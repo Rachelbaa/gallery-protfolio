@@ -1,4 +1,5 @@
 var gProjs = [
+    createProj('vuechat', 'VueChat', 'whatsApp web clone', 'a MEVN stack app (mongoDB, Express, VueJS-3B, Node-JS)- cloudinary, SCSS, Express, Element Plus, socket.io, emailJs, Session and more , picxel perfect of whatsApp web application, with a guest user and chat bot', 'https://vuechat-project.herokuapp.com/', '15 / 08 / 2022', 'VueJs, Mongo-DB, cloudinary, Socket.io, Typescript, nodeJS, MEVN application'),
     createProj('mister-toy', 'Toy Store', 'Go and buy some toys (:', 'Used VueJS-3 with mongoDB, cloudinary, SCSS, Node-JS, Element Plus, socket.io and more , admin middle-ware (admin-username: rachel, admin-password: 111)', 'https://rachel-toys.herokuapp.com/', '18 / 06 / 2022', 'VueJs, Mongo-DB, cloudinary'),
     createProj('miss-keep', 'Notes Maker', 'Make your daily notes', 'Used VueJs to make this project, here you can create different types of notes ,includes a lot of features', null, '01 / 06 / 2022', 'VueJs, Notes, Productivity'),
     createProj('minesweeper', 'Mine Sweeper', 'Watch out from the mines!', 'An enhanced version of the classic minesweeper game', null, '05 / 04 / 2022', 'Matrixes,Game,Classic'),

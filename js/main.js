@@ -3,13 +3,8 @@ function renderPortCards() {
     var cardsContainer = $('.port-container')
     cards.forEach(card => {
         $('.port-container').append(`
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-4 col-sm-6 portfolio-item grow">
          <a class="portfolio-link" data-toggle="modal" onclick= setModal('${card.id}') href="#portfolioModal1">
-         <div class="portfolio-hover">
-         <div class="portfolio-hover-content">
-         <i class="fa fa-plus fa-3x"></i>
-         </div>
-         </div>
          <img class="img-fluid" height="300" src="img/portfolio/${card.id}-thumbnail.png" alt="">
          </a>
          <div class="portfolio-caption">
